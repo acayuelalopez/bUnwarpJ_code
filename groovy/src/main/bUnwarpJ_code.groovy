@@ -25,6 +25,17 @@ import java.awt.Point
 #@File(label = "Output directory", style="directory") outputDir
 #@Integer(label="Fixed Channel", value=1) fixedCh
 #@Boolean (label="Run headless", default="false") headless
+//Advanced Parameters
+#@Integer(label="Registration Mode", value=1) mode
+#@Integer(label="Image Subsample Factor", value=0) img_subsamp_fact
+#@Integer(label="Initial Deformation", value=0) min_scale_deformation
+#@Integer(label="Final Deformation", value=2) max_scale_deformation
+#@Double(label="Divergence Weight", value=0.0) divWeight
+#@Double(label="Curl Weight", value=0.0) curlWeight
+#@Double(label="Landmark Weight", value=0.0) landmarkWeight
+#@Double(label="Image Weight", value=1.0) imageWeight
+#@Double(label="Consistency Weight", value=10.0) consistencyWeight
+#@Double(label="Stop Threshold", value=0.01) stopThreshold
 
 // IDE
 //
@@ -37,16 +48,16 @@ import java.awt.Point
 
 
 //bUnwarpJ Advanced parameters
-int mode = 1;
-int img_subsamp_fact = 0;
-int min_scale_deformation = 0;
-int max_scale_deformation = 2
-def divWeight = 0.0.doubleValue();
-def curlWeight = 0.0.doubleValue();
-def landmarkWeight = 0.0.doubleValue();
-def imageWeight = 1.0.doubleValue();
-def consistencyWeight = 10.0.doubleValue();
-def stopThreshold = 0.01.doubleValue();
+//int mode = 1;
+//int img_subsamp_fact = 0;
+//int min_scale_deformation = 0;
+//int max_scale_deformation = 2
+//def divWeight = 0.0.doubleValue();
+//def curlWeight = 0.0.doubleValue();
+//def landmarkWeight = 0.0.doubleValue();
+//def imageWeight = 1.0.doubleValue();
+//def consistencyWeight = 10.0.doubleValue();
+//def stopThreshold = 0.01.doubleValue();
 
 //Get files (images) from input directory
 def listOfFiles = inputFilesDir.listFiles();
