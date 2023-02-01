@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.scijava</groupId>
+        <artifactId>pom-scijava</artifactId>
+        <version>30.0.0</version>
+    </parent>
+
+    <groupId>es.csic.cnb</groupId>
+    <artifactId>FIXME</artifactId>
+    <version>0.0.1</version>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.codehaus.gmaven</groupId>
+                    <artifactId>groovy-maven-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <!-- mvn clean compile -Denforcer.skip -->
+
+    <repositories>
+        <repository>
+            <id>scijava.public</id>
+            <url>https://maven.scijava.org/content/groups/public</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>ij</artifactId>
+            <version>1.53f</version>
+        </dependency>
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>imagej</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ome</groupId>
+            <artifactId>bio-formats_plugins</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>imagej-plugins-commands</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>fr.inra.ijpb</groupId>
+            <artifactId>MorphoLibJ_</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>3.0.9</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>sc.fiji</groupId>
+            <artifactId>Auto_Threshold</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>sc.fiji</groupId>
+            <artifactId>Skeletonize3D_</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>sc.fiji</groupId>
+            <artifactId>AnalyzeSkeleton_</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>sc.fiji</groupId>
+            <artifactId>bUnwarpJ_</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>
