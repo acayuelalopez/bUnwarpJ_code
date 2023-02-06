@@ -20,7 +20,7 @@ import java.awt.Point
 
 // INPUT UI
 //
-#@File(label="Input File Directory", style="directory") inputFile
+#@File(label="Input File Directory", style="file") inputFile
 #@File(label="Beads reference File", style="file") beadsFile
 #@File(label = "Output directory", style="directory") outputDir
 #@Integer(label="Fixed Channel", value=1) fixedCh
